@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <title>Online Clothing Shop's</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+ </head>
+ <body>
+  <div class="loading-page">
+   <img src="assets/product/clothes/brand.jpg" class="brand-icon"/>
+  </div>
+  <div class="main-page">
+   <div class="wrapper-search">
+    <ion-icon class="icon" name="ellipsis-vertical" id="more-options" onclick="moreOptions()"></ion-icon>
+    <div class="search">
+    <ion-icon class="icon" name="search"></ion-icon>
+    <input placeholder="Search Product" class="input" id="search-input" type="text"/>
+    <ion-icon class="icon" name="camera"></ion-icon>
+    </div>
+    <ion-icon class="icon" name="bag"></ion-icon>
+    <ion-icon class="icon" name="chatbubble-ellipses-outline"></ion-icon>
+   </div>
+   <div class="container-option-search">
+    <div class="wrapper-box-options">
+     <div class="box-options">
+      <p class="option-text">Diskon 50%</p>
+      <ion-icon name="shirt" class="icon"></ion-icon>
+     </div>
+     <div class="box-options">
+      <p class="option-text">Women's Blouses</p>
+      <ion-icon name="shirt" class="icon"></ion-icon>
+     </div>
+     <div class="box-options">
+      <p class="option-text">Korean Style</p>
+      <ion-icon name="shirt" class="icon"></ion-icon>
+     </div>
+     <div class="box-options">
+      <p class="option-text">Women's Top</p>
+      <ion-icon name="shirt" class="icon"></ion-icon>
+     </div>
+     <div class="box-options">
+      <p class="option-text">Jean's Skirt</p>
+      <ion-icon name="shirt" class="icon"></ion-icon>
+     </div>
+    </div>
+   </div>
+   <div class="container-models" id="main-models">
+    <img src="assets/product/clothes/models.jpeg" class="models-bg"/>
+   </div>
+   <div class="container-category">
+    <h1 class="main-title">CATEGORY</h1>
+    <div class="wrapper-category-items">
+     <div class="wrapper-items">
+      <div class="items">
+       <img src="assets/product/clothes/clothes1.jpg" class="items-image"/>
+      </div>
+      <p class="name-items">Camisoles</p>
+     </div>
+     <div class="wrapper-items">
+      <div class="items">
+       <img src="assets/product/clothes/clothes2.jpg" class="items-image"/>
+      </div>
+      <p class="name-items">Tops</p>
+     </div>
+     <div class="wrapper-items">
+      <div class="items">
+       <img src="assets/product/clothes/clothes3.jpg" class="items-image"/>
+      </div>
+      <p class="name-items">Sweaters</p>
+     </div>
+     <div class="wrapper-items">
+      <div class="items">
+       <img src="assets/product/clothes/clothes4.jpg" class="items-image"/>
+      </div>
+      <p class="name-items">Shorts</p>
+     </div>
+     <div class="wrapper-items">
+      <div class="items">
+       <img src="assets/product/clothes/clothes5.jpg" class="items-image"/>
+      </div>
+      <p class="name-items">Sleeved</p>
+     </div>
+     <div class="wrapper-items">
+      <div class="items">
+       <img src="assets/product/clothes/clothes6.jpg" class="items-image"/>
+      </div>
+      <p class="name-items">Dresses</p>
+     </div>
+     <div class="wrapper-items">
+      <div class="items">
+       <img src="assets/product/clothes/clothes7.jpg" class="items-image"/>
+      </div>
+      <p class="name-items">Pants</p>
+     </div>
+     <div class="wrapper-items">
+      <div class="items">
+       <ion-icon style="font-size: 35px; color: white;" name="ellipsis-horizontal"></ion-icon>
+      </div>
+      <p class="name-items">Others</p>
+     </div>
+    </div>
+   </div>
+   <div class="container-models">
+    <img src="assets/product/clothes/models2.jpeg" class="models-bg" id="models2"/>
+   </div>
+  <footer>
+   <div class="cta-btn" onclick="handleSwitchPage('home')">
+    <ion-icon name="home" class="icon"></ion-icon>
+   </div>
+   <div class="cta-btn" onclick="handleSwitchPage('category')">
+    <ion-icon name="sparkles" class="icon"></ion-icon>
+   </div>
+   <div class="cta-btn" onclick="handleSwitchPage('notification')">
+    <ion-icon name="notifications" class="icon"></ion-icon>
+   </div>
+   <div class="cta-btn" onclick="handleSwitchPage('profile')">
+    <ion-icon name="person" class="icon"></ion-icon>
+   </div>
+  </footer>
+  </div>
+  <div class="container-page-login">
+   <div class="content-login">
+    <div class="box-brand">
+     <img src="assets/product/clothes/brand-nobg.png" class="brand-nobg"/>
+    </div>
+    <p class="login-sigin">Log In / Sign in</p>
+    <div class="wrapper-input-number">
+     <ion-icon name="person" class="icon"></ion-icon>
+     <input placeholder="Masukan Nama" class="input-number" type="text"/>
+    </div>
+    <div class="wrapper-input-number">
+     <ion-icon name="call" class="icon"></ion-icon>
+     <input placeholder="Masuk dengan no ponsel" class="input-number" type="number"/>
+    </div>
+     <button class="wrapper-input-number input-number" id="btn-login" onclick="openMainPage()">
+     <ion-icon name="log-in" class="icon"></ion-icon>
+      Masuk
+     </button>
+    <p class="login-sigin">atau login dengan yang lain</p>
+    <div class="box-other-login">
+     <ion-icon name="logo-google" class="icon"></ion-icon>
+     <ion-icon name="logo-facebook" class="icon"></ion-icon>
+     <ion-icon name="logo-twitter" class="icon"></ion-icon>
+    </div>
+   </div>
+  </div>
+  <div class="container-page-category">
+    <aside class="aside-category-list">
+     <div class="cta-category">
+      <div class="box-brand">
+       <img src="assets/product/clothes/brand-nobg.png" class="image"/>
+      </div>
+      <ion-icon class="icon" onclick="handleSwitchPage('default')" name="arrow-back"></ion-icon>
+     </div>
+     <div class="wrapper-category-list">
+      <div class="items-list">
+       <p class="title-category">Cottagecore</p>
+      </div>
+     </div>
+    </aside>
+    <div class="content-items-category">
+     <div class="header-list-category">
+      <h2 class="main-title">CATEGORY</h2>
+      <div class="search">
+       <ion-icon class="icon" name="search"></ion-icon>
+       <input placeholder="Search Product" class="input" type="text"/>
+       <ion-icon class="icon" name="camera"></ion-icon>
+     </div>
+     </div>
+     <div class="wrapper-content-items">
+      <div class="items-product">
+       <div class="image-product">
+        <img src="assets/product/sell/product.jpeg" alt="No Product" class="image"/>
+       </div>
+       <div class="name-product">Cottagecore Milk Maid Top</div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container-page-notifications">
+    <section class="section-content" id="header-title-section">
+     <p class="title-section">Notifications</p>
+     <div class="cta-title-section">
+      <ion-icon class="icon" name="bag"></ion-icon>
+      <ion-icon class="icon" name="chatbubble-ellipses"></ion-icon>
+     </div>
+    </section>
+    <section class="section-content">
+     <div class="wrapper-category-list">
+      <div class="box-icon">
+       <lord-icon
+        src="https://cdn.lordicon.com/tswnhcwg.json"
+        trigger="loop"
+        delay="2500"
+        state="hover-roll"
+        style="width:250px;height:250px">
+       </lord-icon>
+      </div>
+      <div class="box-cards">
+       <p class="title-text">Cartluxe Promo</p>
+       <p class="description-text">Dear you, your discount voucher is up to 50% sales!</p>
+      </div>
+      <ion-icon name="chevron-forward" class="icon"></ion-icon>
+     </div>
+     <div class="wrapper-category-list">
+      <div class="box-icon">
+       <lord-icon
+        src="https://cdn.lordicon.com/qtnfcnne.json"
+        trigger="loop"
+        delay="3000"
+        colors="primary:#242424,secondary:#109173,tertiary:#d1fad7,quaternary:#16c72e"
+        style="width:250px;height:250px">
+       </lord-icon>
+      </div>
+      <div class="box-cards">
+       <p class="title-text">Finance</p>
+       <p class="description-text">Dear you, can get your DANA cash if an items sold!</p>
+      </div>
+      <ion-icon name="chevron-forward" class="icon"></ion-icon>
+     </div>
+     <div class="wrapper-category-list">
+      <div class="box-icon">
+       <lord-icon
+        src="https://cdn.lordicon.com/egmlnyku.json"
+        trigger="loop"
+        delay="3500"
+        state="hover-conversation-alt"
+        colors="primary:#363636,secondary:#f4dc9c,tertiary:#d59f80,quaternary:#ebe6ef"
+        style="width:250px;height:250px">
+       </lord-icon>
+      </div>
+      <div class="box-cards">
+       <p class="title-text">Comment Review</p>
+       <p class="description-text">Log in / Sign in your account for comment on the product you bought!</p>
+      </div>
+      <ion-icon name="chevron-forward" class="icon"></ion-icon>
+     </div>
+     <div class="wrapper-category-list">
+      <div class="box-icon">
+       <lord-icon
+        src="https://cdn.lordicon.com/tlxagvyb.json"
+        trigger="loop"
+        delay="4000"
+        colors="primary:#0065b0,secondary:#f4dc9c,tertiary:#08a88a,quaternary:#e4e4e4"
+        style="width:250px;height:250px">
+       </lord-icon>
+      </div>
+      <div class="box-cards">
+       <p class="title-text">Cartluxe Info</p>
+       <p class="description-text">Log in / Sign in your account for purchase!</p>
+      </div>
+      <ion-icon name="chevron-forward" class="icon"></ion-icon>
+     </div>
+    </section>
+    <section class="section-content">
+     <div class="box-list-order-product">
+      <div class="box-icon">
+       <lord-icon
+        src="https://cdn.lordicon.com/cosvjkbu.json"
+        trigger="click"
+        colors="primary:#d6d6d6,secondary:#bababa,tertiary:#e3e3e3">
+       </lord-icon>
+      </div>
+      <p class="title-text">You Have No Order</p>
+      <button class="btn-order">Order Now</button>
+     </div>
+    </section>
+   </div>
+   <div class="container-page-profile">
+    <section class="title-profile" id="header-title-section">
+     <div class="box-icon">
+       <ion-icon name="person-add" class="icon"></ion-icon>
+     </div>
+     <p class="title-text">Login / Sigin</p>
+     <ion-icon name="settings" class="settings"></ion-icon>
+    </section>
+    <section class="section-content">
+     <div class="ordered-title">
+      <p class="title-text">My Ordered</p>
+      <p class="description-text" style="font-size: 12px;">Show All</p>
+     </div>
+     <div class="wrapper-cta-ordered">
+      <div class="cta-ordered">
+       <ion-icon name="card-outline" class="icon"></ion-icon>
+       <p class="description-text">Not Paid</p>
+      </div>
+      <div class="cta-ordered" onclick="handleAction('packing')">
+       <ion-icon name="logo-dropbox" class="icon"></ion-icon>
+       <p class="description-text">Packing</p>
+      </div>
+      <div class="cta-ordered" onclick="handleAction('shipping')">
+       <ion-icon name="car-outline" class="icon"></ion-icon>
+       <p class="description-text">Shipping</p>
+      </div>
+      <div class="cta-ordered">
+       <ion-icon name="chatbox-ellipses-outline" class="icon"></ion-icon>
+       <p class="description-text">Review</p>
+      </div>
+     </div>
+    </section>
+    <h3 style="color: #000;">Recommendation For You</h3>
+    <section class="section-content" id="section-product-recomended">
+     <div class="wrapper-recomended-product">
+      <div class="product-recomended">
+       <div class="box-icon">
+        <img src="assets/product/sell/product.jpeg" class="image"/>
+       </div>
+       <p class="title-product">Cottagecore</p>
+      </div>
+     </div>
+    </section>
+   </div>
+   <div class="container-order-shipping">
+    <ion-icon class="back-btn" onclick="handleAction('default')" name="arrow-back"></ion-icon>
+    <div class="box-info">
+     <div class="box-icon">
+      <lord-icon
+       src="https://cdn.lordicon.com/cosvjkbu.json"
+       trigger="loop"
+       delay="1500"
+       colors="primary:#5f248d,secondary:#5c5c5c,tertiary:#8e8e8e">
+      </lord-icon>
+     </div>
+     <div class="title-text">Belum Ada Pesanan</div>
+    </div>
+   </div>
+  <script src="index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ </body>
+</html>
